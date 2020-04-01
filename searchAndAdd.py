@@ -6,7 +6,7 @@ from pathlib import Path
 hostname = socket.gethostname()
 hostip = socket.gethostbyname(hostname)
 octets = hostip.split('.')
-slash24 = "%s.%s.%s" % (octets[0],octets[1],octets[2])
+slash24 = "%s.%s.%s" % (octets[0], octets[1], octets[2])
 ####
 appdata = Path(os.environ['APPDATA'])
 database_pathobj = appdata / 'FAHClient' / 'FAHControl.db'
